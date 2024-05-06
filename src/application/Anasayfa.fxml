@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnasayfaController">
+   <children>
+      <AnchorPane layoutX="136.0" layoutY="86.0" prefHeight="450.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="450.0" prefWidth="214.0">
+               <children>
+                  <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/iste.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="88.0" layoutY="31.0" text="Kullanici">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="58.0" text="Bilgileri">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="163.0" text="AD:" />
+                  <Label layoutX="14.0" layoutY="194.0" text="SOYAD:" />
+                  <Label layoutX="14.0" layoutY="234.0" text="Personel NO:" />
+                  <Label layoutX="14.0" layoutY="271.0" text="TC NO" />
+                  <Label layoutX="24.0" layoutY="330.0" text="İYİ ÇALIŞMALAR">
+                     <font>
+                        <Font name="OCR A Extended" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCikis" layoutX="58.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnCikis" prefHeight="38.0" prefWidth="52.0" text="Çıkış" />
+                  <Label fx:id="lblPersonelNo" layoutX="107.0" layoutY="234.0" text="Label" />
+                  <Label fx:id="lblKullanıcıSoyad" layoutX="110.0" layoutY="194.0" text="Label" />
+                  <Label fx:id="lblKullanıcıAd" layoutX="110.0" layoutY="163.0" text="Label" />
+                  <Label fx:id="lblTC" layoutX="110.0" layoutY="271.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="214.0" layoutY="-3.0" prefHeight="450.0" prefWidth="586.0">
+               <children>
+                  <TabPane layoutX="93.0" layoutY="61.0" prefHeight="450.0" prefWidth="586.0" style="-fx-border-color: red;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Ürün Durum">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tabloUrunDurum" layoutX="25.0" layoutY="62.0" prefHeight="419.0" prefWidth="584.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn fx:id="urunTCCOL" prefWidth="116.0" text="TC" />
+                                          <TableColumn fx:id="urunUrunCOL" prefWidth="108.0" text="Ürün" />
+                                          <TableColumn fx:id="urunArizaCOL" prefWidth="129.0" text="Arıza" />
+                                          <TableColumn fx:id="urunAciklamaCOL" prefWidth="153.0" text="Acıklama" />
+                                          <TableColumn fx:id="urunDurumCOL" prefWidth="77.0" text="Durum" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Müşteri Kayıt">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="13.0" layoutY="25.0" text="Müşteri Adı:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="13.0" layoutY="63.0" text="Müşteri Soyad:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="98.0" text="TC NO:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="137.0" text="TEL NO:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="183.0" text="E-MAİL:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="230.0" text="ADRES:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="txtAdres" layoutX="165.0" layoutY="236.0" prefHeight="113.0" prefWidth="281.0" AnchorPane.leftAnchor="165.0" />
+                                    <Button fx:id="btnMusteriKaydet" layoutX="491.0" layoutY="311.0" mnemonicParsing="false" onAction="#musteriKaydetClick" prefHeight="38.0" prefWidth="66.0" text="Kaydet" />
+                                    <TextField fx:id="txtMusteriAd" layoutX="165.0" layoutY="26.0" prefHeight="25.0" prefWidth="207.0" />
+                                    <TextField fx:id="txtMusteriSoyad" layoutX="165.0" layoutY="64.0" prefHeight="25.0" prefWidth="210.0" AnchorPane.leftAnchor="165.0" />
+                                    <TextField fx:id="txtTCNO" layoutX="165.0" layoutY="99.0" prefHeight="25.0" prefWidth="210.0" AnchorPane.leftAnchor="165.0" />
+                                    <TextField fx:id="txtTEL" layoutX="165.0" layoutY="138.0" prefHeight="25.0" prefWidth="210.0" AnchorPane.leftAnchor="165.0" />
+                                    <TextField fx:id="txtEmail" layoutX="165.0" layoutY="183.0" prefHeight="25.0" prefWidth="210.0" AnchorPane.leftAnchor="165.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Cihaz Kayıt">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="31.0" layoutY="22.0" text="TC NO:" AnchorPane.leftAnchor="35.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="71.0" text="MARKA:" AnchorPane.leftAnchor="35.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="30.0" layoutY="126.0" prefWidth="64.0" text="MODEL:" AnchorPane.leftAnchor="35.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="239.0" layoutY="126.0" text="SERİ NO:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="183.0" text="ARIZA:" AnchorPane.leftAnchor="35.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="295.0" text="ŞİKAYET" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="484.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btnKaydet" layoutX="470.0" layoutY="352.0" mnemonicParsing="false" onAction="#cihazKaydetClick" prefHeight="38.0" prefWidth="66.0" text="KAYDET" />
+                                    <TextField fx:id="txtCihazTC" layoutX="198.0" layoutY="23.0" prefHeight="25.0" prefWidth="214.0" AnchorPane.rightAnchor="170.0" />
+                                    <ChoiceBox fx:id="markaChoice" layoutX="208.0" layoutY="72.0" prefHeight="25.0" prefWidth="214.0" AnchorPane.rightAnchor="170.0" />
+                                    <ChoiceBox fx:id="modelChoice" layoutX="141.0" layoutY="127.0" prefHeight="25.0" prefWidth="81.0" />
+                                    <ChoiceBox fx:id="seriChoice" layoutX="334.0" layoutY="127.0" prefHeight="25.0" prefWidth="88.0" AnchorPane.rightAnchor="170.0" />
+                                    <ChoiceBox fx:id="arizaChoice" layoutX="203.0" layoutY="184.0" prefHeight="25.0" prefWidth="214.0" AnchorPane.rightAnchor="170.0" />
+                                    <TextArea fx:id="txtSikayet" layoutX="126.0" layoutY="295.0" prefHeight="95.0" prefWidth="298.0" AnchorPane.rightAnchor="160.0" />
+                                    <Label layoutX="35.0" layoutY="246.0" text="ÜCRET" AnchorPane.leftAnchor="35.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtCihazUcret" layoutX="265.0" layoutY="247.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Cihaz Arama">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtAramaTC" layoutX="14.0" layoutY="14.0" onInputMethodTextChanged="#tcnoKeyPressed2" onKeyPressed="#tcnoKeyPressed" promptText="TC NO:" />
+                                    <TableView fx:id="tabloArama" layoutX="-1.0" layoutY="51.0" prefHeight="373.0" prefWidth="586.0">
+                                      <columns>
+                                        <TableColumn fx:id="aramaTCCOL" prefWidth="111.0" text="TC" />
+                                        <TableColumn fx:id="aranaURUNCOL" prefWidth="121.0" text="Ürün" />
+                                          <TableColumn fx:id="aramaMODELCOL" prefWidth="119.0" text="Model" />
+                                          <TableColumn fx:id="aranaARIZACOL" prefWidth="139.0" text="ARIZA" />
+                                          <TableColumn fx:id="aramaDurumCOL" prefWidth="95.0" text="Durum" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Çıkış İşlemlerı">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.6115107913669064" layoutX="98.0" layoutY="38.0" orientation="VERTICAL" prefHeight="419.0" prefWidth="584.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView fx:id="cikis" layoutX="29.0" layoutY="26.0" prefHeight="252.0" prefWidth="582.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="cikisTCCOL" prefWidth="130.0" text="TC NO" />
+                                                    <TableColumn fx:id="cikisArizaCOL" prefWidth="106.0" text="Arıza" />
+                                                      <TableColumn fx:id="cikisUrunCOL" prefWidth="162.0" text="Ürün" />
+                                                      <TableColumn fx:id="cikisDurumCOL" prefWidth="109.0" text="Durum" />
+                                                      <TableColumn fx:id="cikisFiyatCOL" prefWidth="74.0" text="Fiyat" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="582.0">
+                                             <children>
+                                                <TextField fx:id="txtCikisTC" layoutX="134.0" layoutY="30.0" onKeyPressed="#cikisTcPressed" promptText="TC NO" />
+                                                <ChoiceBox fx:id="choiceArizaDurum" layoutX="133.0" layoutY="80.0" prefWidth="150.0" />
+                                                <Label layoutX="30.0" layoutY="34.0" text="TC NO:" />
+                                                <Label layoutX="30.0" layoutY="84.0" text="ARIZA DURUM" />
+                                                <Button fx:id="btnUrunCikis" layoutX="344.0" layoutY="74.0" mnemonicParsing="false" onAction="#urunCikisClick" prefHeight="38.0" prefWidth="52.0" text="Çıkış" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

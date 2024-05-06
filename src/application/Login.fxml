@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="445.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane layoutX="127.0" layoutY="-17.0" prefHeight="211.0" prefWidth="453.0" style="-fx-background-color: whiite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="211.0" prefWidth="180.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="foto" fitHeight="264.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/iste.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txtKullanici" layoutX="234.0" layoutY="41.0" prefHeight="25.0" prefWidth="174.0" promptText="Kullanıcı Adı" />
+            <Button fx:id="btnUnuttum" layoutX="234.0" layoutY="154.0" mnemonicParsing="false" onAction="#unuttumClıck" prefHeight="33.0" prefWidth="109.0" text="Şifremi Unuttum" />
+            <Button fx:id="btnGiris" layoutX="356.0" layoutY="154.0" mnemonicParsing="false" onAction="#girisClick" prefHeight="33.0" prefWidth="52.0" text="Giriş" />
+            <PasswordField fx:id="txtSifre" layoutX="234.0" layoutY="94.0" prefHeight="25.0" prefWidth="174.0" promptText="Şifre" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
